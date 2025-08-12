@@ -49,3 +49,7 @@ appsettings.Development.json
 .DS_Store
 Thumbs.db
 /Hive/hive.client/obj/Debug
+/Hive/Hive.Application/obj
+/Hive/Hive.Domain/obj
+/Hive/Hive.Infrastructure/obj
+/Hive/Hive.Tests/obj
