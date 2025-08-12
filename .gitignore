@@ -1,9 +1,9 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-# Modified to include frontend (React) ignores
+# Modified to include frontend (React TypeScript) ignores for hive.client
 ################################################################################
 
-# Backend: Visual Studio & ASP.NET Core
+########## Backend: Visual Studio & ASP.NET Core ##########
 /Hive/.vs/
 /Hive/Hive.API/obj/
 /Hive/Hive.API/bin/
@@ -12,11 +12,40 @@
 /Hive/.vs/ProjectEvaluation/
 
 /Hive/Hive.API/wwwroot/   # Build output for static files
+
+# User-specific files
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
 *.log
+
+# Local config
 appsettings.Development.json
 
 
+########## Frontend: React + TypeScript (hive.client) ##########
+# Dependencies
+/Hive/hive.client/node_modules/
+
+# Build output
+/Hive/hive.client/build/
+/Hive/hive.client/dist/
+
+# Logs
+/Hive/hive.client/npm-debug.log*
+/Hive/hive.client/yarn-debug.log*
+/Hive/hive.client/yarn-error.log*
+
+# Environment variables
+/Hive/hive.client/.env
+/Hive/hive.client/.env.local
+/Hive/hive.client/.env.development.local
+/Hive/hive.client/.env.test.local
+/Hive/hive.client/.env.production.local
+
+
+########## OS-specific ##########
+.DS_Store
+Thumbs.db
+/Hive/hive.client/obj/Debug
