@@ -8,12 +8,15 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Persistence\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hive.Domain\Hive.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -12,4 +12,11 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.13.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Hive.Application\Hive.Application.csproj" />
+    <ProjectReference Include="..\Hive.Domain\Hive.Domain.csproj" />
+    <ProjectReference Include="..\Hive.Infrastructure\Hive.Infrastructure.csproj" />
+    <ProjectReference Include="..\Hive.Tests\Hive.Tests.csproj" />
+  </ItemGroup>
+
 </Project>
