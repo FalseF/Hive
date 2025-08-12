@@ -1,8 +1,22 @@
 ﻿################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+# Modified to include frontend (React) ignores
 ################################################################################
 
-/Hive/.vs/Hive
-/Hive/Hive.API/obj
-/Hive/Hive.API/bin/Debug/net8.0
-/Hive/.vs/ProjectEvaluation
+# Backend: Visual Studio & ASP.NET Core
+/Hive/.vs/
+/Hive/Hive.API/obj/
+/Hive/Hive.API/bin/
+/Hive/Hive.API/bin/Debug/
+/Hive/Hive.API/bin/Release/
+/Hive/.vs/ProjectEvaluation/
+
+/Hive/Hive.API/wwwroot/   # Build output for static files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.log
+appsettings.Development.json
+
+
