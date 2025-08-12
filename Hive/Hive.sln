@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hive.API", "Hive.API\Hive.A
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "hive.client", "hive.client\hive.client.esproj", "{731C235C-7501-B044-FD31-781B9732B05A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hive.Application", "Hive.Application\Hive.Application.csproj", "{6BDA1E13-A2F6-4D0C-8F8B-A5DBCCD72509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hive.Domain", "Hive.Domain\Hive.Domain.csproj", "{A251B5E6-B916-4821-997A-2BD54DB62342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hive.Infrastructure", "Hive.Infrastructure\Hive.Infrastructure.csproj", "{6E1F4D72-4DC4-48A7-B266-DDB8616EFEFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hive.Tests", "Hive.Tests\Hive.Tests.csproj", "{D6E9E7C3-CF08-4E32-B0AD-3D5376C4A97F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +31,22 @@ Global
 		{731C235C-7501-B044-FD31-781B9732B05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{731C235C-7501-B044-FD31-781B9732B05A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{731C235C-7501-B044-FD31-781B9732B05A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6BDA1E13-A2F6-4D0C-8F8B-A5DBCCD72509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDA1E13-A2F6-4D0C-8F8B-A5DBCCD72509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDA1E13-A2F6-4D0C-8F8B-A5DBCCD72509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDA1E13-A2F6-4D0C-8F8B-A5DBCCD72509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A251B5E6-B916-4821-997A-2BD54DB62342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A251B5E6-B916-4821-997A-2BD54DB62342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A251B5E6-B916-4821-997A-2BD54DB62342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A251B5E6-B916-4821-997A-2BD54DB62342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1F4D72-4DC4-48A7-B266-DDB8616EFEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1F4D72-4DC4-48A7-B266-DDB8616EFEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1F4D72-4DC4-48A7-B266-DDB8616EFEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1F4D72-4DC4-48A7-B266-DDB8616EFEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E9E7C3-CF08-4E32-B0AD-3D5376C4A97F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E9E7C3-CF08-4E32-B0AD-3D5376C4A97F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E9E7C3-CF08-4E32-B0AD-3D5376C4A97F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E9E7C3-CF08-4E32-B0AD-3D5376C4A97F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
