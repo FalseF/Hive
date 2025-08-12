@@ -53,3 +53,7 @@ Thumbs.db
 /Hive/Hive.Domain/obj
 /Hive/Hive.Infrastructure/obj
 /Hive/Hive.Tests/obj
+/Hive/Hive.Application/bin/Debug/net8.0
+/Hive/Hive.Domain/bin/Debug/net8.0
+/Hive/Hive.Infrastructure/bin/Debug/net8.0
+/Hive/Hive.Tests/bin/Debug/net8.0
