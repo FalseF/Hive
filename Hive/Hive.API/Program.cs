@@ -9,10 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 // Add services
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IUserRepository>(provider =>
+    new UserRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddAuthentication(options =>
+builder.Services.AddScoped<IJwtService>(provider =>
+    new JwtService(
+        builder.Configuration["Jwt:SecretKey"],
+        int.Parse(builder.Configuration["Jwt:ExpiryMinutes"])
+    ));
+
+/*builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -30,7 +36,7 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ValidateIssuerSigningKey = true,
     };
-});
+});*/
 
 
 builder.Services.AddControllers();
