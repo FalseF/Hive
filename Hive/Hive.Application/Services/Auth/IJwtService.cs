@@ -9,5 +9,6 @@ namespace Hive.Application.Services.Auth
     public interface IJwtService
     {
         string GenerateToken(int userId, string username);
+        string GenerateRefreshToken();
     }
 }

@@ -12,6 +12,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IUserRepository>(provider =>
     new UserRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IRefreshTokenRepository>(provider =>
+    new RefreshTokenRepository(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<IJwtService>(provider =>
     new JwtService(
         builder.Configuration["Jwt:SecretKey"],
